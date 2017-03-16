@@ -1,0 +1,19 @@
+{
+    "remotePath": "/home/admin/web/public/MacroFreak/",
+    "host": "72.2.112.245",
+    "username": "root",
+    "password": null,
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": "/Users/qtb9604/.ssh/macrofreak/MacroFreak_id_rsa",
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ]
+}

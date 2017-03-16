@@ -1,5 +1,35 @@
 var fs = require('fs');
-
+var columns = [
+	"Restaurant",
+	"Type of Food",
+	"Item",
+	"Dietary Information",
+	"Serving Size",
+	"Calories",
+	"Calories from Fat",
+	"Total Fat (g)",
+	"Saturated Fat (g)",
+	"Trans Fat (g)",
+	"Cholesterol (mg)",
+	"Sodium (mg)",
+	"Carbohydrates (g)",
+	"Dietary Fiber (g)",
+	"Sugars (g)",
+	"Protein (g)",
+	"Vitamin A",
+	"Vitamin C",
+	"Calcium",
+	"Iron",
+	"Allergen Information",
+	"Potassium (mg)",
+	"Vitamin B6",
+	"Vitamin B12",
+	"Vitamin E",
+	"Polyunsaturated Fat (g)",
+	"Monounsaturated Fat (g)"
+];
+var lineNumber = 2;
+var duplicates = {};
 fs.readFile('./input.txt', 'utf8', function(err, data) {
 	if(err) throw err;
 	let sql = parseCSV(data);
@@ -53,28 +83,28 @@ function parseCSV(csv) {
 		var name = info[2];
 		var dietaryInfo = info[3];
 		var servingSize = info[4];
-		var calories = removeWhiteSpace(info[5]) !== '-' ? info[5]: 0;
-		var cff = removeWhiteSpace(info[6]) !== '-' ? info[6]: 0;
-		var fat = removeWhiteSpace(info[7]) !== '-' ? info[7]: 0;
-		var sfat = removeWhiteSpace(info[8]) !== '-' ? info[8]: 0;
-		var tfat = removeWhiteSpace(info[9]) !== '-' ? info[9]: 0;
-		var cholesterol = removeWhiteSpace(info[10]) !== '-' ? info[10]: 0;
-		var sodium = removeWhiteSpace(info[11]) !== '-' ? info[11]: 0;
-		var carbs = removeWhiteSpace(info[12]) !== '-' ? info[12]: 0;
-		var fiber = removeWhiteSpace(info[13]) !== '-' ? info[13]: 0;
-		var sugar = removeWhiteSpace(info[14]) !== '-' ? info[14]: 0;
-		var protein = removeWhiteSpace(info[15]) !== '-' ? info[15]: 0;
-		var vitA = removeWhiteSpace(info[16]) !== '-' ? info[16]: 0;
-		var vitC = removeWhiteSpace(info[17]) !== '-' ? info[17]: 0;
-		var calcium = removeWhiteSpace(info[18]) !== '-' ? info[18]: 0;
-		var iron = removeWhiteSpace(info[19]) !== '-' ? info[19] : 0;
+		var calories = isNumeric(removeWhiteSpace(5)) ? removeWhiteSpace(5): 0;
+		var cff = isNumeric(removeWhiteSpace(6)) ? removeWhiteSpace(6): 0;
+		var fat = isNumeric(removeWhiteSpace(7)) ? removeWhiteSpace(7): 0;
+		var sfat = isNumeric(removeWhiteSpace(8)) ? removeWhiteSpace(8): 0;
+		var tfat = isNumeric(removeWhiteSpace(9)) ? removeWhiteSpace(9): 0;
+		var cholesterol = isNumeric(removeWhiteSpace(10)) ? removeWhiteSpace(10): 0;
+		var sodium = isNumeric(removeWhiteSpace(1)) ? removeWhiteSpace(11): 0;
+		var carbs = isNumeric(removeWhiteSpace(12)) ? removeWhiteSpace(12): 0;
+		var fiber = isNumeric(removeWhiteSpace(13)) ? removeWhiteSpace(13): 0;
+		var sugar = isNumeric(removeWhiteSpace(14)) ? removeWhiteSpace(14): 0;
+		var protein = isNumeric(removeWhiteSpace(15)) ? removeWhiteSpace(15): 0;
+		var vitA = isNumeric(removeWhiteSpace(16)) ? removeWhiteSpace(16): 0;
+		var vitC = isNumeric(removeWhiteSpace(17)) ? removeWhiteSpace(17): 0;
+		var calcium = isNumeric(removeWhiteSpace(18)) ? removeWhiteSpace(18): 0;
+		var iron = isNumeric(removeWhiteSpace(19)) ? removeWhiteSpace(19): 0;
 		var allergenInfo = info[20];
-		var potassium = removeWhiteSpace(info[21]) !== '-' ? info[21] : 0;
-		var vitB6 = removeWhiteSpace(info[22]) !== '-' ? info[22] : 0;
-		var vitB12 = removeWhiteSpace(info[23]) !== '-' ? info[23] : 0;
-		var vitE = removeWhiteSpace(info[24]) !== '-' ? info[24] : 0;
-		var pufat = removeWhiteSpace(info[25]) !== '-' ? info[25] : 0;
-		var mufat = removeWhiteSpace(info[26]) !== '-' ? info[26] : 0;
+		var potassium = isNumeric(removeWhiteSpace(21)) ? removeWhiteSpace(21): 0;
+		var vitB6 = isNumeric(removeWhiteSpace(22)) ? removeWhiteSpace(22): 0;
+		var vitB12 = isNumeric(removeWhiteSpace(23)) ? removeWhiteSpace(23): 0;
+		var vitE = isNumeric(removeWhiteSpace(24)) ? removeWhiteSpace(24): 0;
+		var pufat = isNumeric(removeWhiteSpace(25)) ? removeWhiteSpace(25): 0;
+		var mufat = isNumeric(removeWhiteSpace(26)) ? removeWhiteSpace(26): 0;
 
 		var sql = 'INSERT INTO `Food` Values(NULL,"' + 
 			foodchain + '","' + type + '","' + 
@@ -84,11 +114,25 @@ function parseCSV(csv) {
 			sodium + ',' + carbs + ',' + fiber + ',' + 
 			sugar + ',' + protein  + ',' + vitA + ',' + vitC + ',' + calcium + ',' +
 			iron + ',"' + allergenInfo + '",' + potassium + ',' + vitB6 + ',' +
-			vitB12 + ',' + pufat + ',' + mufat + ');';
-		console.log(sql);
+			vitB12 + ',' + vitE + ',' + pufat + ',' + mufat + ');';
+		
+		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain)) {
+			console.log(sql);
+			duplicates[name] = {calories: calories, foodchain: foodchain};
+		}
+		lineNumber++;
 	}
 
-	function removeWhiteSpace(str) {
+	function removeWhiteSpace(index) {
+		let str = info[index];
+		if(!str) {
+			console.log('error in column ' + columns[index] + ' on line ' + lineNumber);
+		}
 		return str.replace(/\s/g, "");
+
+	}
+
+	function isNumeric(obj) {
+		return !isNaN(obj - parseFloat(obj));
 	}
 }
