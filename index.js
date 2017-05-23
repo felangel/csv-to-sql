@@ -116,7 +116,7 @@ function parseCSV(csv) {
 			iron + ',"' + allergenInfo + '",' + potassium + ',' + vitB6 + ',' +
 			vitB12 + ',' + vitE + ',' + pufat + ',' + mufat + ');';
 		
-		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain)) {
+		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain) && type !== 'Others') {
 			console.log(sql);
 			duplicates[name] = {calories: calories, foodchain: foodchain};
 		}
