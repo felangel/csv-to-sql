@@ -81,33 +81,34 @@ function parseCSV(csv) {
 		var foodchain = info[0];
 		var type = info[1];
 		var name = info[2];
-		var dietaryInfo = info[3];
-		var servingSize = info[4];
-		var calories = isNumeric(removeWhiteSpace(5)) ? removeWhiteSpace(5): 0;
-		var cff = isNumeric(removeWhiteSpace(6)) ? removeWhiteSpace(6): 0;
-		var fat = isNumeric(removeWhiteSpace(7)) ? removeWhiteSpace(7): 0;
-		var sfat = isNumeric(removeWhiteSpace(8)) ? removeWhiteSpace(8): 0;
-		var tfat = isNumeric(removeWhiteSpace(9)) ? removeWhiteSpace(9): 0;
-		var cholesterol = isNumeric(removeWhiteSpace(10)) ? removeWhiteSpace(10): 0;
-		var sodium = isNumeric(removeWhiteSpace(1)) ? removeWhiteSpace(11): 0;
-		var carbs = isNumeric(removeWhiteSpace(12)) ? removeWhiteSpace(12): 0;
-		var fiber = isNumeric(removeWhiteSpace(13)) ? removeWhiteSpace(13): 0;
-		var sugar = isNumeric(removeWhiteSpace(14)) ? removeWhiteSpace(14): 0;
-		var protein = isNumeric(removeWhiteSpace(15)) ? removeWhiteSpace(15): 0;
-		var vitA = isNumeric(removeWhiteSpace(16)) ? removeWhiteSpace(16): 0;
-		var vitC = isNumeric(removeWhiteSpace(17)) ? removeWhiteSpace(17): 0;
-		var calcium = isNumeric(removeWhiteSpace(18)) ? removeWhiteSpace(18): 0;
-		var iron = isNumeric(removeWhiteSpace(19)) ? removeWhiteSpace(19): 0;
-		var allergenInfo = info[20];
-		var potassium = isNumeric(removeWhiteSpace(21)) ? removeWhiteSpace(21): 0;
-		var vitB6 = isNumeric(removeWhiteSpace(22)) ? removeWhiteSpace(22): 0;
-		var vitB12 = isNumeric(removeWhiteSpace(23)) ? removeWhiteSpace(23): 0;
-		var vitE = isNumeric(removeWhiteSpace(24)) ? removeWhiteSpace(24): 0;
-		var pufat = isNumeric(removeWhiteSpace(25)) ? removeWhiteSpace(25): 0;
-		var mufat = isNumeric(removeWhiteSpace(26)) ? removeWhiteSpace(26): 0;
+		var searchFilter = info[3]
+		var dietaryInfo = info[4];
+		var servingSize = info[5];
+		var calories = isNumeric(removeWhiteSpace(6)) ? removeWhiteSpace(6): 0;
+		var cff = isNumeric(removeWhiteSpace(7)) ? removeWhiteSpace(7): 0;
+		var fat = isNumeric(removeWhiteSpace(8)) ? removeWhiteSpace(8): 0;
+		var sfat = isNumeric(removeWhiteSpace(9)) ? removeWhiteSpace(9): 0;
+		var tfat = isNumeric(removeWhiteSpace(10)) ? removeWhiteSpace(10): 0;
+		var cholesterol = isNumeric(removeWhiteSpace(11)) ? removeWhiteSpace(11): 0;
+		var sodium = isNumeric(removeWhiteSpace(12)) ? removeWhiteSpace(12): 0;
+		var carbs = isNumeric(removeWhiteSpace(13)) ? removeWhiteSpace(13): 0;
+		var fiber = isNumeric(removeWhiteSpace(14)) ? removeWhiteSpace(14): 0;
+		var sugar = isNumeric(removeWhiteSpace(15)) ? removeWhiteSpace(15): 0;
+		var protein = isNumeric(removeWhiteSpace(16)) ? removeWhiteSpace(16): 0;
+		var vitA = isNumeric(removeWhiteSpace(17)) ? removeWhiteSpace(17): 0;
+		var vitC = isNumeric(removeWhiteSpace(18)) ? removeWhiteSpace(18): 0;
+		var calcium = isNumeric(removeWhiteSpace(19)) ? removeWhiteSpace(19): 0;
+		var iron = isNumeric(removeWhiteSpace(20)) ? removeWhiteSpace(20): 0;
+		var allergenInfo = info[21];
+		var potassium = isNumeric(removeWhiteSpace(22)) ? removeWhiteSpace(22): 0;
+		var vitB6 = isNumeric(removeWhiteSpace(23)) ? removeWhiteSpace(23): 0;
+		var vitB12 = isNumeric(removeWhiteSpace(24)) ? removeWhiteSpace(24): 0;
+		var vitE = isNumeric(removeWhiteSpace(25)) ? removeWhiteSpace(25): 0;
+		var pufat = isNumeric(removeWhiteSpace(26)) ? removeWhiteSpace(26): 0;
+		var mufat = isNumeric(removeWhiteSpace(27)) ? removeWhiteSpace(27): 0;
 
 		var sql = 'INSERT INTO `Food` Values(NULL,"' + 
-			foodchain + '","' + type + '","' + 
+			foodchain + '","' + type + '","' + searchFilter + '","' +
 			name + '","' + dietaryInfo + '","' + servingSize + '",' + 
 			calories + ',' + cff + ',' + fat + ',' + 
 			sfat + ',' + tfat + ',' + cholesterol + ',' + 
