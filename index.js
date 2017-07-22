@@ -3,6 +3,7 @@ var columns = [
 	"Restaurant",
 	"Type of Food",
 	"Item",
+	"Search Filter",
 	"Dietary Information",
 	"Serving Size",
 	"Calories",
@@ -30,6 +31,7 @@ var columns = [
 ];
 var lineNumber = 2;
 var duplicates = {};
+var badData = [];
 fs.readFile('./input.txt', 'utf8', function(err, data) {
 	if(err) throw err;
 	let sql = parseCSV(data);
@@ -47,36 +49,6 @@ function parseCSV(csv) {
 				info[j] = 0;
 			}
 		}
-
-		/*
-			0 Restaurant,
-			1 Type of Food,
-			2 Item,
-			3 Dietary Information,
-			4 Serving Size,
-			5 Calories,
-			6 Calories from Fat,
-			7 Total Fat (g),
-			8 Saturated Fat (g),
-			9 Trans Fat (g),
-			10 Cholesterol (mg),
-			11 Sodium (mg),
-			12 Carbohydrates (g),
-			13 Dietary Fiber (g),
-			14 Sugars (g),
-			15 Protein (g),
-			16 Vitamin A,
-			17 Vitamin C,
-			18 Calcium,
-			19 Iron,
-			20 Allergen Information,
-			21 Potassium (mg),
-			22 Vitamin B6,
-			23 Vitamin B12,
-			24 Vitamin E,
-			25 Polyunsaturated Fat (g),
-			26 Monounsaturated Fat (g)
-		*/
 
 		var foodchain = info[0];
 		var type = info[1];
@@ -116,12 +88,21 @@ function parseCSV(csv) {
 			sugar + ',' + protein  + ',' + vitA + ',' + vitC + ',' + calcium + ',' +
 			iron + ',"' + allergenInfo + '",' + potassium + ',' + vitB6 + ',' +
 			vitB12 + ',' + vitE + ',' + pufat + ',' + mufat + ');';
-		
+				
 		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain) && type !== 'Others') {
 			console.log(sql);
 			duplicates[name] = {calories: calories, foodchain: foodchain};
 		}
+		if((calories === 0) && (fat + carbs + protein + cff + sfat + tfat + sugar > 0)) {			
+			var badDataString = `foodchain: ${foodchain} | name: ${name} | calories: ${calories} | carbs: ${carbs} | fat: ${fat} | protein: ${protein}`;
+			badData.push(badDataString);
+		}
 		lineNumber++;
+	}
+	
+	if(badData.length) {
+		console.log('BAD DATA!');
+		console.log(badData.join('\n'));
 	}
 
 	function removeWhiteSpace(index) {
