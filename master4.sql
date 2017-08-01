@@ -1,4 +1,3 @@
-INSERT INTO `Food` Values(NULL,"Restaurant","Type of Food","Filter","Item","Dietary Information","Serving Size",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Allergen Information",0,0,0,0,0,0);
 INSERT INTO `Food` Values(NULL,"In-N-Out Burger","Burgers","Food","Hamburger W/ Onion","Non-Vegetarian","1",390,170,19,5,0,40,650,39,3,10,16,500,9,40,3.6,"Egg Soy Wheat Gluten",0,0,0,0,0,0);
 INSERT INTO `Food` Values(NULL,"In-N-Out Burger","Burgers","Food","Hamburger W/ Onion Mustard & Ketchup Instead Of Spread","Non-Vegetarian","1",310,90,10,4,0,35,730,41,3,10,16,750,12,40,3.6,"Soy Wheat Gluten",0,0,0,0,0,0);
 INSERT INTO `Food` Values(NULL,"In-N-Out Burger","Burgers","Food","Hamburger W/ Onion Protein Style (Bun Replaced W/ Lettuce)","Non-Vegetarian","1",240,150,17,4,0,40,370,11,3,7,13,750,12,40,2.7,"Egg Soy",0,0,0,0,0,0);

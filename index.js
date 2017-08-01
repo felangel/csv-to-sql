@@ -32,6 +32,8 @@ var columns = [
 var lineNumber = 2;
 var duplicates = {};
 var badData = [];
+var validate = false;
+
 fs.readFile('./input.txt', 'utf8', function(err, data) {
 	if(err) throw err;
 	let sql = parseCSV(data);
@@ -90,20 +92,22 @@ function parseCSV(csv) {
 			vitB12 + ',' + vitE + ',' + pufat + ',' + mufat + ');';
 				
 		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain) && type !== 'Others') {
-			console.log(sql);
+			if(!validate) {
+				console.log(sql);
+			}			
 			duplicates[name] = {calories: calories, foodchain: foodchain};
 		}
-		if((calories === 0) && (fat + carbs + protein + cff + sfat + tfat + sugar > 0)) {			
-			var badDataString = `foodchain: ${foodchain} | name: ${name} | calories: ${calories} | carbs: ${carbs} | fat: ${fat} | protein: ${protein}`;
+		if(calories ==! macrosToCalories(fat, carbs, protein)) {			
+			var badDataString = `${foodchain},${name},${calories},${carbs},${fat},${protein}\n`;
 			badData.push(badDataString);
 		}
 		lineNumber++;
 	}
 	
-	if(badData.length) {
-		console.log('BAD DATA!');
-		console.log(badData.join('\n'));
-	}
+	if(validate && badData.length) {
+		var headerList = 'foodchain, name, calories, carbs, fat, protein\n';
+		console.log(headerList + badData.join(''));		
+	}	
 
 	function removeWhiteSpace(index) {
 		let str = info[index];
@@ -113,8 +117,12 @@ function parseCSV(csv) {
 		return str.replace(/\s/g, "");
 
 	}
+}
 
-	function isNumeric(obj) {
-		return !isNaN(obj - parseFloat(obj));
-	}
+function isNumeric(obj) {
+	return !isNaN(obj - parseFloat(obj));
+}
+
+function macrosToCalories(fat, carbs, protein) {
+	return ((fat * 9) + (carbs * 4) + (protein * 4));
 }

@@ -1,0 +1,315 @@
+foodchain, name, calories, carbs, fat, protein
+Culver's,Caffeine Free Diet Pepsi Large,0,1,0,0
+McDonald's,Mccafe Coffee,0,1,0,2
+McDonald's,Mccafe Coffee,0,1,0,2
+Wendy's,Medium Diet Coke,0,1,0,0
+Wendy's,Large Diet Coke,0,1,0,0
+Wendy's,Value Brewed Unsweetened Iced Tea,0,1,0,0
+Wendy's,Small Brewed Unsweetened Iced Tea,0,1,0,0
+Wendy's,Medium Brewed Unsweetened Iced Tea,0,1,0,0
+Wendy's,Original Redhead Roasters Coffee Large,0,0,1,0
+Wendy's,Small Hot Tea,0,1,0,0
+Wendy's,Medium Coke Zero,0,1,0,0
+Wendy's,Large Coke Zero,0,1,0,0
+Wendy's,Original Redhead Roasters Coffee Large,0,0,1,0
+Pizza Hut,Buffalo Drizzle,0,1,0,0
+Pizza Hut,Barbeque Drizzle,0,1,0,0
+Pizza Hut,Buffalo Drizzle,0,1,0,0
+Pizza Hut,Buffalo Drizzle,0,1,0,0
+Pizza Hut,Barbeque Drizzle,0,1,0,0
+Pizza Hut,Buffalo Drizzle,0,1,0,0
+Pizza Hut,Lettuce,0,1,0,0
+Pizza Hut,Sliced Roma Tomatoes,0,1,0,0
+Pizza Hut,Chopped Garlic,0,1,0,0
+Pizza Hut,Sauerkraut,0,1,0,0
+Pizza Hut,Sliced Roma Tomatoes,0,1,0,0
+Pizza Hut,Chopped Garlic,0,1,0,0
+Pizza Hut,Sauerkraut,0,1,0,0
+Pizza Hut,Sliced Roma Tomatoes,0,1,0,0
+Pizza Hut,Buffalo Pizza Sauce,0,1,0,0
+Pizza Hut,Classic Marinara Pizza Sauce,0,1,0,0
+Pizza Hut,Premium Crushed Tomato Pizza Sauce,0,1,0,0
+Pizza Hut,Buffalo Pizza Sauce,0,1,0,0
+Pizza Hut,Classic Marinara Pizza Sauce,0,1,0,0
+Pizza Hut,Premium Crushed Tomato Pizza Sauce,0,1,0,0
+Pizza Hut,Buffalo Pizza Sauce,0,1,0,0
+Pizza Hut,Classic Marinara Pizza Sauce,0,1,0,0
+Pizza Hut,Premium Crushed Tomato Pizza Sauce,0,1,0,0
+Pizza Hut,Buffalo Pizza Sauce,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Mushrooms,0,1,0,1
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Mushrooms,0,1,0,1
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Mushrooms,0,1,0,0
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Sweet Pineapple,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Diced Roma Tomatoes,0,1,0,0
+Pizza Hut,Fresh Green Bell Peppers,0,1,0,0
+Pizza Hut,Fresh Mushrooms,0,1,0,1
+Pizza Hut,Sliced Jalapeno Peppers,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Slow-Roasted Ham,0,0,0,1
+Pizza Hut,Sweet Pineapple,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Pizza Hut,Sweet Pineapple,0,1,0,0
+Pizza Hut,Fresh Red Onions,0,1,0,0
+Pizza Hut,Green Chile Peppers,0,1,0,0
+Pizza Hut,Peruvian Cherry Peppers,0,1,0,0
+Buffalo Wild Wings,Chipotle BBQ 3 Shakes,0,1,0,0
+Buffalo Wild Wings,Lemon Pepper 3 Shakes,0,1,0,0
+California Pizza Kitchen,Fresca,0,1,0,0
+Del Taco,Small Fountain Drink (Hi C Fruit Punch),0,1,0,0
+Del Taco,Small Fountain Drink (Minute Maid Light,0,1,0,0
+Panera Bread,Brewed Iced Tea Medium,0,2,0,0
+Panera Bread,Brewed Iced Tea Large,0,3,0,0
+Panera Bread,Spindrift  Lemon Seltzer ,0,1,0,0
+Steak 'n Shake,Iced Tea - Unsweetened - (22 Fl Oz Glass W/Ice),0,1,0,0
+Steak 'n Shake,Hot Tea - (8 Fl Oz Mug),0,1,0,0
+Taco Bell,Strawberry Flavor Shot (16 Oz)  Lv,0,1,0,0
+Taco Bell,Strawberry Flavor Shot (32 Oz)  Lv,0,1,0,0
+Taco Bell,Vanilla Flavor Shot (16 Oz)  Lv,0,1,0,0
+Taco Bell,Vanilla Flavor Shot (32 Oz)  Lv,0,1,0,0
+Taco Bell,Diet Dr Pepper (30 Fl Oz),0,1,0,0
+Taco Bell,Border Sauce Fire,0,1,0,0
+Sonic,Blackberry Wacky Pack,0,1,0,0
+Sonic,Blackberry Small,0,1,0,0
+Sonic,Lemon Wacky Pack,0,1,0,0
+Sonic,Lemon Small,0,1,0,0
+Sonic,Lime Wacky Pack,0,1,0,0
+Sonic,Lime Small,0,1,0,0
+Pret A Manger,Coconut Water,0,19,80,0
+Church's Chicken,Diet Coke - (Regular),0,0,0,30
+Church's Chicken,Diet Coke - (Large),0,0,0,40
+Church's Chicken,Unsweetened Tea - (Regular),0,0,0,10
+Church's Chicken,Unsweetened Tea - (Large),0,0,0,15
+Church's Chicken,Coke Zero - (Regular),0,0,0,10
+Church's Chicken,Coke Zero - (Large),0,0,0,10
+Church's Chicken,Diet Dr Pepper - (Regular),0,0,0,110
+Church's Chicken,Diet Dr Pepper - (Large),0,0,0,150
+Church's Chicken,Caffeine Free Diet Coke - (Regular),0,0,0,30
+Church's Chicken,Caffeine Free Diet Coke - (Large),0,0,0,40
+Church's Chicken,Gold Peak Unsweet Blk Tea - (Regular),0,0,0,40
+Church's Chicken,Gold Peak Unsweet Blk Tea - (Large),0,0,0,55
+Denny's,Lettuce,0,1,0,0
+Taco Time,Banana Peppers (1 Pepper),0,1,0,0
+Arctic Circle,Dr Pepper,0,25,0,0
+Domino's Pizza,Pizza W/ Diced Tomatoes Only,0,1,0,0
+Domino's Pizza,Pizza W/ Green Peppers Only,0,1,0,0
+Domino's Pizza,Pizza W/ Diced Tomatoes Only,0,1,0,0
+Domino's Pizza,Pizza W/ Diced Tomatoes Only,0,1,0,0
+Domino's Pizza,Pizza W/ Green Peppers Only,0,1,0,0
+Firehouse Subs,Caffeine Free Diet Coke 44 Oz,0,1,0,0
+Firehouse Subs,Caffeine Free Diet Coke With Lemon 44 Oz,0,1,0,0
+Firehouse Subs,Caffeine Free Diet Coke With Orange 32 Oz,0,1,0,0
+Firehouse Subs,Caffeine Free Diet Coke With Orange 44 Oz,0,1,0,0
+Firehouse Subs,Coke Zero With Lemon 44 Oz,0,1,0,0
+Firehouse Subs,Coke Zero With Orange 44 Oz,0,1,0,0
+Firehouse Subs,Dasani With Cherry 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Grape 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Lemon 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Lemon 32 Oz,0,1,0,0
+Firehouse Subs,Dasani With Lemon 44 Oz,0,2,0,0
+Firehouse Subs,Dasani With Lime 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Orange 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Orange 32 Oz,0,1,0,0
+Firehouse Subs,Dasani With Orange 44 Oz,0,2,0,0
+Firehouse Subs,Dasani With Raspberry 22 Oz,0,1,0,0
+Firehouse Subs,Dasani With Strawberry 22 Oz,0,1,0,0
+Firehouse Subs,Diet Barq's Root Beer 32 Oz,0,1,0,0
+Firehouse Subs,Diet Barq's Root Beer 44 Oz,0,1,0,0
+Firehouse Subs,Diet Coke 44 Oz,0,1,0,0
+Firehouse Subs,Diet Coke With Lemon 44 Oz,0,1,0,0
+Firehouse Subs,Diet Coke With Orange 32 Oz,0,1,0,0
+Firehouse Subs,Diet Coke With Orange 44 Oz,0,1,0,0
+Firehouse Subs,Diet Mello Yello With Strawberry Peach (Specialty) 12 Oz,0,1,0,0
+Firehouse Subs,Diet Seagram's Ginger Ale 12 Oz,0,1,0,0
+Firehouse Subs,Diet Seagram's Ginger Ale With Orange 12 Oz,0,1,0,0
+Firehouse Subs,Fanta Zero Orange 12 Oz,0,1,0,0
+Firehouse Subs,Fanta Zero Orange 22 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Lemonade 12 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Lemonade 22 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Lemonade 32 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Peach Lemonade 12 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Peach Lemonade 22 Oz,0,1,0,0
+Firehouse Subs,Fruitwater Fizzy Strawberry Lemonade 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero 22 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero 32 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Cherry 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Fruit Punch 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Grape 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Orange 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Orange 22 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Peach 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Raspberry 12 Oz,0,1,0,0
+Firehouse Subs,Mello Yello Zero Strawberry 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Cherry 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Grape 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Lemon 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Lime 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Orange 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Raspberry 12 Oz,0,1,0,0
+Firehouse Subs,Powerade Zero Strawberry 12 Oz,0,1,0,0
+Firehouse Subs,Au Jus Bell Peppers,0,1,0,0
+Firehouse Subs,Au Jus Bell Peppers,0,1,0,0
+Firehouse Subs,Au Jus Mushrooms,0,1,0,1
+Firehouse Subs,Au Jus Onions,0,1,0,0
+Firehouse Subs,Cherry Pepper Rings,0,1,0,0
+Firehouse Subs,Iceberg Lettuce,0,1,0,0
+Firehouse Subs,Onion,0,1,0,0
+Firehouse Subs,Pickle Spear,0,1,0,0
+Tim Hortons,Espresso Shot,0,1,0,0
+Tim Hortons,Flavor Shot,0,1,0,0
+Tropical Smoothie Cafe,Ginger,0,1,0,0
+Tropical Smoothie Cafe,Brewed Unsweet Tea (16 Fl Oz),0,1,0,0
+Jersey Mike's Subs,Condiments Onions Mini,0,1,0,0
+Applebee's,Hot Tea,0,1,0,0
+Lee's Famous Recipe Chicken,Famous Breast Strip With Buffalo Sauce,0,0,0,15
+Lee's Famous Recipe Chicken,Unsweetened Tea,0,1,0,0
+Lee's Famous Recipe Chicken,Coffee,0,0,0,1
+Lee's Famous Recipe Chicken,Vitamin Water Zero Squeezed,0,5,0,0
+Pita Pit,Banana Peppers,0,1,0,0
+Pita Pit,Green Peppers,0,1,0,0
+Pita Pit,Onions,0,1,0,0
+Pita Pit,Roasted Red Peppers,0,1,0,0
+Pita Pit,Romaine Lettuce,0,1,0,1
+Pita Pit,Shredded Lettuce,0,1,0,0
+Pita Pit,Fuze Brewed Tea Unsweetened,0,1,0,0
+Pita Pit,Caffeine Free Diet Coke,0,79,0,0
+Pita Pit,Coke Zero,0,73,0,0
+Pita Pit,Fanta Zero Orange,0,78,0,0
+Pita Pit,Mello Yello Zero,0,59,0,0
+Pita Pit,Fresca,0,2,0,0
+Pita Pit,Glaceau Vitaminwater Xxx Zero,0,1,0,0
+Pita Pit,Gold Peak Diet Black Tea,0,1,0,0
+Shake Shack,Lettuce,1,0,0,0
+White Castle,Spicy Hamburger Sauce (1 1/2 Tsp),0,1,0,0
+White Castle,Coffee Decaffeinated Large,0,0,0,1
+White Castle,Gold Peak Iced Tea Black Unsweetened Gallon,0,1,0,1
+Red Robin,Under 10 Calories Peach Iced Tea,0,8,0,0
+Red Robin,Under 10 Calories Raspberry Iced Tea,0,8,0,0
+Olive Garden,Hot Tea,0,1,0,0
+Olive Garden,Fresh Brewed Iced Tea,0,1,0,0
+KFC,Pepsi Zero Sugar (30 fl oz),0,1,0,0
+Popeyes,Jalapenos,0,1,0,0
+Popeyes,Jalapenos,0,6,0,0
+Maggianos,Hot Tea,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Pickles,0,1,0,0
+Yardhouse,Iced Tea (all flavors),0,1,0,0
+Yardhouse,Hot Tea (all flavors),0,1,0,0
+Mellow Mushroom,Broccoli _ Large Slice,0,1,0,0
+Mellow Mushroom,Broccoli _ Medium Slice,0,1,0,0
+Mellow Mushroom,Caramelized Onions _ Small Slice,0,1,0,0
+Mellow Mushroom,Chives,0,1,0,0
+Mellow Mushroom,Cucumbers,0,1,0,0
+Mellow Mushroom,Garlic _ Large Slice,0,1,0,0
+Mellow Mushroom,Green Peppers _ Large Slice,0,1,0,0
+Mellow Mushroom,Green Peppers _ Medium Slice,0,1,0,0
+Mellow Mushroom,Green Peppers _ Small Slice,0,1,0,0
+Mellow Mushroom,Iceberg Lettuce,0,1,0,0
+Mellow Mushroom,Onions _ Small Slice,0,1,0,0
+Mellow Mushroom,Pepperoncini _ Small Slice,0,1,0,0
+Mellow Mushroom,Roma Tomatoes _ Large Slice,0,1,0,0
+Mellow Mushroom,Roma Tomatoes _ Medium Slice,0,1,0,0
+Mellow Mushroom,Roma Tomatoes _ Small Slice,0,1,0,0
+Mellow Mushroom,Black Truffle Oil _ Large Slice,0,0,0.5,0
+Mellow Mushroom,Black Truffle Oil _ Small Slice,0,0,0.5,0
+Jet's Pizza,Party Size Antipasto Salad (Serves 12-15),0,320,0,58
+Jet's Pizza,Party Size Caesar Salad (Serves 12-15),0,0,630,11
+Jet's Pizza,Party Size Greek Salad (Serves 12-15),0,0,620,14
+Jet's Pizza,Cheese Only Jet's Boat,0,0,270,6
+Jet's Pizza,Grilled Chicken Deli Boat,0,0,510,1
+Jet's Pizza,Ham & Cheese Deli Boat,0,0,540,1
+Jet's Pizza,Italian Deli Boat,0,0,640,1
+Jet's Pizza,Steak & Cheese Deli Boat,0,0,540,1
+Jet's Pizza,Tuna Deli Boat,0,0,430,1
+Jet's Pizza,Veggie Deli Boat,0,0,520,8
+Jet's Pizza,Chicken Parmesan Jetzee,0,0,440,6
+Jet's Pizza,Grilled Chicken Jetzee,0,0,700,1
+Jet's Pizza,Ham & Cheese Jetzee,0,0,710,1
+Jet's Pizza,Italian Jetzee,0,0,820,1
+Jet's Pizza,Meatball Jetzee,0,0,620,11
+Jet's Pizza,Pizza Jetzee,0,0,510,3
+Jet's Pizza,Steak & Cheese Jetzee,0,0,720,1
+Jet's Pizza,Tuna Jetzee,0,0,600,1
+Jet's Pizza,Veggie Jetzee,0,0,690,9
+Jet's Pizza,Turbo Crust,0,1,0,0
+Jet's Pizza,Butter,0,0,0.5,0
+Jet's Pizza,Turbo Crust,0,1,0,0
+Jet's Pizza,Italian Dressing,0,0,0,7
+Jet's Pizza,Caesar Dressing,0,125,0,23
+Jet's Pizza,Catalina Dressing,0,0,0,100
+Jet's Pizza,Italian Dressing,0,0,0,10
+Jet's Pizza,Ranch Dressing,0,35,0,7
+Jet's Pizza,Grape Tomatoes,0,1,0,0
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Mild Peppers,0,1,0,0
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Jalapenos,0,1,0,0
+Jet's Pizza,Mushrooms,0,1,0,0
+Jet's Pizza,Tomatoes,0,1,0,0
+Jet's Pizza,Anchovies,0,0,0,1
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Red Onions,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Red Onions,0,1,0,0
+Jet's Pizza,Tomatoes,0,1,0,0
+Jet's Pizza,Jalapenos,0,1,0,0
+Jet's Pizza,Mild Peppers,0,1,0,0
+Jet's Pizza,Tomatoes,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Anchovies,0,0,0,1
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Red Onions,0,1,0,0
+Jet's Pizza,Tomatoes,0,1,0,0
+Jet's Pizza,Anchovies,0,0,0,1
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Red Onions,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Anchovies,0,0,0,1
+Jet's Pizza,Green Peppers,0,1,0,0
+Jet's Pizza,Onions,0,1,0,0
+Jet's Pizza,Red Onions,0,1,0,0
+Jet's Pizza,Tomatoes,0,1,0,0
+Jet's Pizza,Hot,0,1,0,0
