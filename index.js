@@ -29,15 +29,91 @@ var columns = [
 	"Polyunsaturated Fat (g)",
 	"Monounsaturated Fat (g)"
 ];
+var nonVegetarianKeywords = [
+	'ahi',
+	'angus',
+	'artic char',
+	'bacon',
+	'barramundi',
+	'bass',
+	'barbacoa',
+	'breast',
+	'butterburger',
+	'beef',
+	'bLT',
+	'bone',
+	'calamari',
+	'carnita',
+	'catfish',
+	'cheeseburger',
+	'corndog',
+	'corn dog',
+	'chicken',
+	'chili',
+	'chorizo',
+	'clam',
+	'cod',
+	'corvina',
+	'crab',
+	'egg',
+	'filet',
+	'Fish',
+	'grouper',
+	'ham',
+	'hamburger',
+	'halibut',
+	'hotdog',
+	'hot dog',
+	'jambalaya',
+	'jerk',
+	'lamb',
+	'link',
+	'lobster',
+	'mignon',
+	'mahi mahi',
+	'meat',
+	'nugget',
+	'omelet',
+	'opah',
+	'octopus',
+	'pepperoni',
+	'pepperoncini',
+	'pork',
+	'pulled',
+	'prime',
+	'road kill',
+	'reuben',
+	'rib',
+	'salmon',
+	'sashimi',
+	'sausage',
+	'scampi',
+	'sirloin',
+	'shrimp',
+	'sourdough',
+	'steak',
+	'squid',
+	'sushi',
+	'swordfish',
+	'tenders',
+	'tilapia',
+	'turkey',
+	'tuna',
+	'whitefish',
+	'wing',
+	'veal',
+	'ziti'
+];
+
 var lineNumber = 2;
 var duplicates = {};
 var badData = [];
 var validate = false;
+var calorieThreshold = 50;
 
 fs.readFile('./input.txt', 'utf8', function(err, data) {
 	if(err) throw err;
-	let sql = parseCSV(data);
-	console.log(sql);
+	parseCSV(data);
 });
 
 function parseCSV(csv) { 
@@ -55,7 +131,7 @@ function parseCSV(csv) {
 		var foodchain = info[0];
 		var type = info[1];
 		var name = info[2];
-		var searchFilter = info[3]
+		var searchFilter = `${info[3]}${isNonVegetarian(name) ? ';Non-Vegetarian' : ''}`
 		var dietaryInfo = info[4];
 		var servingSize = info[5];
 		var calories = isNumeric(removeWhiteSpace(6)) ? removeWhiteSpace(6): 0;
@@ -80,7 +156,7 @@ function parseCSV(csv) {
 		var vitE = isNumeric(removeWhiteSpace(25)) ? removeWhiteSpace(25): 0;
 		var pufat = isNumeric(removeWhiteSpace(26)) ? removeWhiteSpace(26): 0;
 		var mufat = isNumeric(removeWhiteSpace(27)) ? removeWhiteSpace(27): 0;
-
+		
 		var sql = 'INSERT INTO `Food` Values(NULL,"' + 
 			foodchain + '","' + type + '","' + searchFilter + '","' +
 			name + '","' + dietaryInfo + '","' + servingSize + '",' + 
@@ -90,24 +166,26 @@ function parseCSV(csv) {
 			sugar + ',' + protein  + ',' + vitA + ',' + vitC + ',' + calcium + ',' +
 			iron + ',"' + allergenInfo + '",' + potassium + ',' + vitB6 + ',' +
 			vitB12 + ',' + vitE + ',' + pufat + ',' + mufat + ');';
-				
-		if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain) && type !== 'Others') {
-			if(!validate) {
-				console.log(sql);
-			}			
-			duplicates[name] = {calories: calories, foodchain: foodchain};
-		}
-		if(calories ==! macrosToCalories(fat, carbs, protein)) {			
-			var badDataString = `${foodchain},${name},${calories},${carbs},${fat},${protein}\n`;
-			badData.push(badDataString);
+		
+		if(type !== 'Others') {
+			if(!(duplicates.hasOwnProperty(name) && duplicates[name].calories === calories && duplicates[name].foodchain === foodchain)) {
+				if(!validate) {
+					console.log(sql);
+				}
+				duplicates[name] = {calories: calories, foodchain: foodchain};
+			}
+			if(Math.abs(calories - macrosToCalories(fat, carbs, protein)) >= calorieThreshold) {			
+				var badDataString = `${foodchain},${name},${calories},${carbs},${fat},${protein}\n`;
+				badData.push(badDataString);
+			}
 		}
 		lineNumber++;
 	}
 	
 	if(validate && badData.length) {
 		var headerList = 'foodchain, name, calories, carbs, fat, protein\n';
-		console.log(headerList + badData.join(''));		
-	}	
+		console.log(headerList + badData.join(''));
+	}
 
 	function removeWhiteSpace(index) {
 		let str = info[index];
@@ -115,7 +193,6 @@ function parseCSV(csv) {
 			console.log('error in column ' + columns[index] + ' on line ' + lineNumber);
 		}
 		return str.replace(/\s/g, "");
-
 	}
 }
 
@@ -125,4 +202,15 @@ function isNumeric(obj) {
 
 function macrosToCalories(fat, carbs, protein) {
 	return ((fat * 9) + (carbs * 4) + (protein * 4));
+}
+
+function isNonVegetarian(name) {	
+	let words = name.split(' ');
+	for(var i = 0; i < words.length; i++) {
+		let word = words[i];
+		if(nonVegetarianKeywords.includes(word.toLowerCase())) {
+			return true;
+		}
+	};
+	return false;
 }
